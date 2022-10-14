@@ -57,10 +57,10 @@ all: $(NAME)
 $(NAME) : $(OBJS) 
 	$(AR) $(NAME) $(OBJS)
 
-%.o : %.c $(HEADER)
+%.o : %.c $(HEADER) 
 	$(CC) $(CFLAGS) -c $<
 
-bonus : $(BONUS_OBJS) $(HEADER)
+bonus : $(BONUS_OBJS) 
 	$(AR) $(NAME) $(BONUS_OBJS)
 
 clean: 
